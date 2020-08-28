@@ -10,5 +10,13 @@
         {
             System.Console.WriteLine("Sort");
         }
+        public void Print(int[] array)
+        {
+            foreach (var item in array)
+            {
+                System.Console.Write($"{item} ");
+            }
+            System.Console.WriteLine();
+        }
     }
 }
