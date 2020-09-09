@@ -63,7 +63,7 @@ public class Program
     {
         string jsonstring = File.ReadAllText(jsonfile);
         Mobile phone = JsonSerializer.Deserialize<Apple>(jsonstring);
-        Console.WriteLine("blablaiprkardumela");
+        //Console.WriteLine("blabla kardumela");
         phone.DisplayCharacteristics();
         Console.WriteLine($"{phone.Vendor}");
     }

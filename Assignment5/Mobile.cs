@@ -8,6 +8,8 @@ public abstract class Mobile
 
     public abstract string Vendor { get; set; }
     public string esime { get; set; } = "esim";
+    public Dictionary<string, string> Characteristics { get; set; } = new Dictionary<string, string>();
+    
     //public string InternalStorage { get; set; }
     //public string RAM { get; set; }
     //public string Processor { get; set; }
@@ -15,7 +17,7 @@ public abstract class Mobile
     //public string MainCamera { get; set; }
     //public string FrontalCamera { get; set; }
 
-    public Dictionary<string, string> Characteristics = new Dictionary<string, string>();
+    //private Dictionary<string, string> characteristics = new Dictionary<string, string>();
     public abstract void Root();
 
     public void DisplayName()
